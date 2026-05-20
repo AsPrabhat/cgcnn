@@ -81,4 +81,3 @@ models/
 # Project Data and Output
 *.cif
 cif_structures/
-training_results/

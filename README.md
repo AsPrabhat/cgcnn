@@ -36,8 +36,9 @@ The repository is built around a reproducible Jupyter notebook pipeline. Start J
 uv run jupyter lab
 ```
 
-Follow the notebooks in `notebooks/` sequentially for the complete data and training pipeline:
+There are two ways to navigate the notebooks in `notebooks/`:
 
+**Option A: Step-by-Step Tutorial (Recommended for learning)**
 1. **`01_atom_embeddings.ipynb`**: Generate foundational atom feature embeddings from periodic table data.
 2. **`02_data_download.ipynb`**: Download crystal structures (CIF files) from the Materials Project API.
 3. **`03_graph_building.ipynb`**: Convert CIF structures into PyTorch Geometric graph representations.
@@ -45,7 +46,11 @@ Follow the notebooks in `notebooks/` sequentially for the complete data and trai
 5. **`05_cgcnn_data_loading.ipynb`**: Load and preprocess the datasets for the model.
 6. **`06_cgcnn_model.ipynb`**: Define the CGCNN model architecture.
 7. **`07_cgcnn_training.ipynb`**: Train the model and evaluate baseline performance.
-8. **`08_cgcnn_complete.ipynb`**: The complete end-to-end training, evaluation, and visualization pipeline.
+
+**Option B: End-to-End Pipeline (For training & evaluation)**
+1. **`01_atom_embeddings.ipynb`**: Generate embeddings.
+2. **`02_data_download.ipynb`**: Download dataset.
+3. **`08_cgcnn_complete.ipynb`**: The complete end-to-end data processing, training, evaluation, and visualization pipeline.
 
 ## 📁 Repository Structure
 
@@ -69,7 +74,7 @@ cgcnn/
 └── test_environment.py         # Utility script to verify package installations
 ```
 
-*Note: The `notebooks/` directory internally manages all generated data (`cif_structures/`, `.csv`, `.json`, etc.). These data files and the `.venv/` directory are excluded from version control.*
+*Note: The `notebooks/` directory internally manages all generated data. Raw structure data files (`cif_structures/` and `*.cif`) and the `.venv/` directory are excluded from version control, but the training results and model outputs are tracked for visibility.*
 
 ## 🛠️ Troubleshooting
 

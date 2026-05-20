@@ -1,0 +1,45 @@
+{
+  "GaussianDistance": {
+    "filter_centers": 41,
+    "distance_range": "0 to 8.0 \u00c5",
+    "step_size": 0.2,
+    "variance": 0.2
+  },
+  "Dataset": {
+    "total_samples": 1000,
+    "atom_feature_dimension": 186,
+    "neighbor_feature_dimension": 41,
+    "max_neighbors": 12,
+    "radius_cutoff": 8.0
+  },
+  "DataLoaders": {
+    "batch_size": 8,
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15,
+    "train_batches": 88,
+    "val_batches": 19,
+    "test_batches": 19,
+    "train_samples": 1000,
+    "val_samples": 1000,
+    "test_samples": 1000
+  },
+  "FirstSample": {
+    "material_id": "mp-29718",
+    "num_atoms": 44,
+    "target_value": -0.8177875280380249,
+    "atom_fea_shape": [
+      44,
+      186
+    ],
+    "nbr_fea_shape": [
+      44,
+      12,
+      41
+    ],
+    "nbr_fea_idx_shape": [
+      44,
+      12
+    ]
+  }
+}

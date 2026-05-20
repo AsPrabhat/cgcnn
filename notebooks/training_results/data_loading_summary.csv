@@ -1,0 +1,5 @@
+Component,Key_Information
+GaussianDistance,"Filters: 41, Range: 0-8.0Å, Variance: 0.2"
+Dataset,"Samples: 1000, Atom Features: 186, Neighbor Features: 41"
+DataLoaders,"Train: 88 batches (1000 samples), Val: 19 batches (1000 samples), Test: 19 batches (1000 samples)"
+FirstSample,"Crystal: mp-29718, Atoms: 44, Target: -0.817788"
